@@ -26,8 +26,9 @@ def handle_entry():
     champs = read_champs()
     
     if search_name:
-        if search_name in champs:
-            messagebox.showinfo("ACHIEVED", f"*** {search_name} already completed! ***")
+        matches = [champ for champ in champs if champ.startswith(search_name.title())]
+        if matches:
+            messagebox.showinfo("ACHIEVED", f"-----\n{'\n---\n'.join(matches)}\n-----")
         else:
             messagebox.showerror("MISSION START", f">> Time to take {search_name} for a ride! <<")
     elif add_name:
