@@ -12,3 +12,6 @@ So if you wanna change the colors, good luck (luckily there are just 3 colors, b
 I spent more time learning tk and struggling because I have no IDE (coded no Notepad lol) thank writing the program so it's probably error-prone?  
   
 That's pretty much it, thanks  
+
+Update: Added a little search bar that returns results that start with the query (kat -> katarina, lu -> lucian, lulu, ...)  
+Also if you want to make an easy-to-access executable on Windows and you have python installed create a shortcut calling pythonw.exe on the script :)
